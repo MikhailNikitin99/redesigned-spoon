@@ -1,3 +1,78 @@
+# Домашнее задание к занятию 5. «Практическое применение Docker»  
+## Задача 0  
+<img width="666" height="114" alt="Задача 0" src="https://github.com/user-attachments/assets/c5a49bc1-d3bc-4178-ae51-db2e16f013fc" />  
+  
+## Задача 1  
+https://github.com/MikhailNikitin99/shvirtd-example-python  
+  
+### 1.2  
+<img width="908" height="340" alt="Задача 1 2" src="https://github.com/user-attachments/assets/3addb2b3-ef97-4d09-b4f5-7a17842722dc" />  
+  
+### 1.2.1  
+<img width="764" height="255" alt="Задача 1 2 1" src="https://github.com/user-attachments/assets/919b4ed5-b9ed-4c52-a666-783ee6dc9484" />  
+  
+### 1.3  
+<img width="1514" height="517" alt="Задача 1 3" src="https://github.com/user-attachments/assets/6d1d8825-7aad-4874-885b-518874a88519" />  
+
+<img width="895" height="331" alt="SQL в контейнере для локального запуска app" src="https://github.com/user-attachments/assets/84387c83-124c-43b7-85cb-533ee94bced2" />
+
+  
+### 1.4  
+  
+В комментариях и коде приложения и в .env форка  
+export DB_TABLE_NAME=<...>  
+  
+## Задача 2
+
+[Файл vulnerabilities.csv](https://github.com/MikhailNikitin99/redesigned-spoon/blob/main/vulnerabilities.csv)
+
+## Задача 3  
+  
+<img width="673" height="156" alt="Задача 3" src="https://github.com/user-attachments/assets/8b82ebaa-ca4e-4624-9b03-23b06ce14a55" />  
+  
+### 3.4  
+  
+<img width="789" height="796" alt="Задача 3 3-4" src="https://github.com/user-attachments/assets/568c6433-5147-46cc-971a-f2806eea0004" />  
+  
+## Задача 4  
+
+<img width="796" height="796" alt="Задача 4 Таблица SQL" src="https://github.com/user-attachments/assets/8ce98cfe-986d-46d8-a4c8-ce8e21f71e0a" />  
+
+https://github.com/MikhailNikitin99/shvirtd-example-python  
+
+## Задача 5
+  
+[Скрипт для создания бекапов](https://github.com/MikhailNikitin99/shvirtd-example-python/blob/main/mysql_backup.sh)  
+  
+```bash
+#!/bin/bash
+mkdir -p /opt/backup
+DATE=$(date +"%Y%m%d_%H%M%S")
+BACKUP_FILE="/opt/backup/mysqldump_${DATE}.sql"
+docker run -d --rm --network shvirtd-example-python_backend --env-file /opt/shvirtd-example-python/.env schnitzler/mysqldump > "$BACKUP_FILE"
+```  
+  
+<img width="1244" height="129" alt="Крон-задача дампа  БД Задача 5" src="https://github.com/user-attachments/assets/96cd490b-98c1-4b78-b5c1-5f20b81f325a" />  
+
+## Задача 6  
+
+<img width="1012" height="312" alt="Задача 6 1" src="https://github.com/user-attachments/assets/daf3af88-6880-408a-995c-ea660fda32e4" />  
+  
+<img width="1836" height="872" alt="Задача 6 dive" src="https://github.com/user-attachments/assets/df9eef14-5aaa-4d2f-80ae-4f2d9394f84a" />  
+
+<img width="1827" height="540" alt="Задача 6 терраформ" src="https://github.com/user-attachments/assets/013af3b1-20f9-4170-9ecd-994740328a56" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+# Предыдущие задания
+  
 ## 1 Задание
   
 https://hub.docker.com/repository/docker/mikhailnikitin99/custom-nginx/general
